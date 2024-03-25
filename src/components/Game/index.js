@@ -26,7 +26,7 @@ class Game extends Component {
   }
 
   setOpponent = id => {
-    const randomIdx = Math.floor(Math.random() * 100) % 3
+    const randomIdx = Math.floor(Math.random() * 3)
     const {choicesList} = this.props
     this.setState({opponentChoice: choicesList[randomIdx].id})
     this.updateScore(id, randomIdx)
